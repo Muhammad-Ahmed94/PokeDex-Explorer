@@ -1,32 +1,62 @@
 body {
-    background-image: linear-gradient(to right bottom, rgba(70, 5, 208, .8), rgba(31, 2, 95, 0.8));
-    background-repeat: no-repeat;
-    height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: cadetblue;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
-    width: 50rem;
+    background-color: bisque;
+    width: 50%;
     height: 30rem;
-    background-color: rgb(179, 75, 51);
-    color: #fff;
-    font-weight: bold;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    text-align: center;
-    margin: 0 auto;
-    border: 3px solid navy;
+    margin-top: 5rem;
     border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+
+    &-data {
+        margin-top: 5rem;
+    }
 }
 
-.container button{
-    padding: 1rem 2rem;
-    border-radius: 10px;
-    font-size: 2rem;
-    cursor: pointer;
-
-    &:not(:last-child) {
-        margin-right: 1rem;
-
+.pokemonName {
+    &Label {
     }
+    &Input {
+        font-size: 1rem;
+        border: none;
+        padding: 1rem 2rem;
+        margin: 0 1rem;
+        border-radius: 10px;
+        &:focus {
+            outline: none;
+        }
+    }
+    &Btn {
+        text-transform: uppercase;
+        cursor: pointer;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+    }
+}
+
+.pokemon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    &NameDisplay {
+        display: block;
+        font-weight: 400;
+    }
+}
+
+img {
+    width: 5rem;
+    height: 5rem;
 }

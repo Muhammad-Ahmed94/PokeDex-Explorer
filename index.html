@@ -6,20 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/style.css">
-    <title>PracticeJS</title>
+    <link rel="shortcut icon" href="./images/pokemon-favicon.ico" type="image/x-icon">
+    <title>PokeDexExplorer</title>
 </head>
 
 <body>
-<div class="container">
-    <button  onclick="playGame('Rock')">Rock</button>
-    <button  onclick="playGame('Paper')">Paper</button>
 
-    <button  onclick="playGame('Scissor')">Scissor</button>
-    <h1 for="" class="playerText">Player:</h1><br>
-    <h1 for="" class="computerText">Computer:</h1><br>
-    <h1 for="" class="result"></h1>
-</div>
+    <div class="container">
+        <div class="container-data">
+            <label for="poekmonName" class="pokemonNameLabel">Enter Pokemon Name</label>
+            <input type="text" class="pokemonNameInput" id="poekmonName" placeholder="Enter name">
+            <button onclick="fetchPokemon()" class="pokemonNameBtn">Search</button>
+        </div>
+        
+
+        <div class="pokemon">
+            <img src="" alt="pokemon-image" class="pokemonImage" style="display: none;">
+            <h3 class="pokemonNameDisplay"></h3>
+
+        </div>
+    </div>
+
     <script src="index.js"></script>
 </body>
 
 </html>
+
+
